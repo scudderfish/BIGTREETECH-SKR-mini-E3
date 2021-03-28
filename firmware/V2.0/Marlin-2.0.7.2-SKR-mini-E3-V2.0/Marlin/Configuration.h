@@ -88,7 +88,7 @@
  */
 
 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
-#define SHOW_BOOTSCREEN
+//#define SHOW_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
 //#define SHOW_CUSTOM_BOOTSCREEN
@@ -574,8 +574,8 @@
 //#define PID_DEBUG             // Sends debug data to the serial port. Use 'M303 D' to toggle activation.
 //#define PID_OPENLOOP          // Puts PID in open loop. M104/M140 sets the output power from 0 to PID_MAX
 //#define SLOW_PWM_HEATERS      // PWM with very low frequency (roughly 0.125Hz=8s) and minimum state time of approximately 1s useful for heaters driven by a relay
-#define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature \
-                                // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
+#define PID_FUNCTIONAL_RANGE 10 /* If the temperature difference between the target temperature and the actual temperature \
+                                 is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.*/
 #endif
 
 // @section extruder
@@ -854,8 +854,7 @@
  */
 #if DISABLED(CLASSIC_JERK)
 #define JUNCTION_DEVIATION_MM 0.08 // (mm) Distance from real junction edge
-#define JD_HANDLE_SMALL_SEGMENTS   // Use curvature estimation instead of just the junction angle \
-                                   // for small segments (< 1mm) with large junction angles (> 135°).
+#define JD_HANDLE_SMALL_SEGMENTS   // Use curvature estimation instead of just the junction angle  for small segments (< 1mm) with large junction angles (> 135°).
 #endif
 
 /**
@@ -1692,7 +1691,7 @@
  *
  * View the current statistics with M78.
  */
-#define PRINTCOUNTER
+//#define PRINTCOUNTER
 
 /**
  * Password
@@ -1797,7 +1796,7 @@
  *
  * Use CRC checks and retries on the SD communication.
  */
-#define SD_CHECK_AND_RETRY
+//#define SD_CHECK_AND_RETRY
 
 /**
  * LCD Menu Items
@@ -1860,7 +1859,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-#define INDIVIDUAL_AXIS_HOMING_MENU
+//#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER
